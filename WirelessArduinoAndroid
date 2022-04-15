@@ -1,0 +1,49 @@
+a
+  if ( inData == "F") {
+    Serial.println("LED OFF");
+    digitalWrite(13, LOW); // switch OFF LED
+    delay(500);
+  }
+  if ( inData == "N") {
+    Serial.println("LED ON");
+    digitalWrite(13, HIGH); // switch OFF LED
+    delay(500);
+
+  }
+  if ( inData == "S") {
+    Serial.println("LED FLASHING");
+    digitalWrite(13, HIGH);
+    delay(350);
+    digitalWrite(13, LOW);
+    delay(500);
+  }
+  if (inData == "J") {
+    Serial.println("LED LONG SHORT LONG");
+    digitalWrite(13, HIGH);
+    delay(500);
+    digitalWrite(13, LOW);
+    delay(200);
+    digitalWrite(13, HIGH);
+    delay(200);
+    digitalWrite(13, LOW);
+    delay(200);
+    digitalWrite(13, HIGH);
+    delay(200);
+  }
+  if (inData == "W") {
+    Serial.println("LED LONG SHORT LONG");
+    digitalWrite(13, HIGH);
+    delay(200);
+    digitalWrite(13, LOW);
+    delay(200);
+    digitalWrite(13, HIGH);
+    delay(500);
+    digitalWrite(13, LOW);
+    delay(200);
+    digitalWrite(13, HIGH);
+    delay(200);
+
+
+ }
+}
+
